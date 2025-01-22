@@ -1,6 +1,5 @@
-/* font links */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Pacifico&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+/* font links
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Pacifico&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');\ */
 :root {
     --main_color: #00e8e8;
 }
@@ -26,10 +25,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: var(--main_color);
     border-radius: 5px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /* ----------------------navbar---------------------------------- */
@@ -90,7 +85,7 @@ html {
 
 /* ----------------------content---------------------------------- */
 .site-content {
-    background-image: url(../assets/pexels-pixabay-159751.jpg);
+    background-image: url(../assets/books.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -155,7 +150,8 @@ html {
 .section-1 {
     margin-bottom: 8%;
 }
-.card{
+
+.card {
     width: 20rem;
 }
 
@@ -286,57 +282,130 @@ html {
     margin-top: 10%;
     font-family: 'roboto condensed';
 }
+
 /* ----------------------footer---------------------------------- */
-.social i{
+.social i {
     color: #ef5651;
     font-size: 30px;
     transition: 0.3s;
     cursor: pointer;
 }
-.social i:hover{
+
+.social i:hover {
     transform: translateY(-10px);
 }
 
 /* ----------------------media---------------------------------- */
-@media screen and (max-width: 768px){
-    .section-1 .card{
+@media screen and (max-width: 768px) {
+    .section-1 .card {
         width: 14rem;
     }
-    .section-4 .col-md-7 img{
+
+    .section-4 .col-md-7 img {
         width: 350px;
     }
 }
-@media screen and (max-width: 320px){
-    .site-content .site-title{
+
+@media screen and (max-width: 320px) {
+    .site-content .site-title {
         font-size: 30px;
         padding-left: 15%;
     }
-    .site-content .site-btn2{
+
+    .site-content .site-btn2 {
         display: none;
     }
-    .site-content .site-btn1{
+
+    .site-content .site-btn1 {
         margin-left: 15%;
     }
-    .section-1 .heading-1 , .section-1 .heading-2{
+
+    .section-1 .heading-1,
+    .section-1 .heading-2 {
         font-size: 25px;
     }
-    .section-1 .col-md-4{
+
+    .section-1 .col-md-4 {
         padding: 5%;
         margin-left: 8%;
     }
-    .section-1 .card{
+
+    .section-1 .card {
         width: 15rem;
     }
-    .section-4 .col-md-5{
+
+    .section-4 .col-md-5 {
         padding: 0% 15%;
     }
-    footer input[type='button']{
+
+    footer input[type='button'] {
         margin-top: 5%;
     }
 }
-@media screen and (max-width: 667px){
-    .section-1 .card{
+
+@media screen and (max-width: 667px) {
+    .section-1 .card {
         width: 14rem;
         margin-left: 15%;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-4 img {
+        width: 450px;
+    }
+
+    .section-4 p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1368px) {
+    .section-4 img {
+        width: 450px;
+    }
+
+    .section-4 p {
+        font-size: 14px;
+    }
+    .section-4 h1 {
+        font-size: 30px;
+    }
+    .section-4 .col-md-5{
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .section-4 img {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .section-4 img {
+        width: 590px;
+    }
+    .section-4 .col-md-5{
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .section-4 img {
+        width: 450px;
+    }
+    .section-4 .col-md-5{
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width: 915px) {
+    .section-4 .col-md-5{
+        margin-left: 15%;
+    }
+    .section-4 img{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 667px) and (max-height: 375px) {
+    html{
+        overflow: hidden;
+    }
+    
 }
